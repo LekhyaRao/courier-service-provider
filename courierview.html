@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            *{
+                margin:0px; 
+            }
+            .header{
+                background-color: black;
+                padding-left: 25px;
+                height: 50px;
+                padding: 15px 15px;
+            }
+            .header-b > a{
+                display: inline-block;
+                text-align: center;
+                padding-left: 90%;
+                text-decoration: none;
+                color: white;
+            }
+            .header-b > a:hover{
+                color: #00FF7F;
+            }
+            .ul{
+                padding: 0px;
+                margin: 0px;
+                width: 200px;
+                background-color: black;
+                height: 100%;
+                position: absolute;
+                overflow: auto;
+                
+                
+                
+            }
+            .ul li a{
+                display: block;
+                color: white;
+                padding: 25px 25px;
+                text-decoration: none;
+                text-align: left;
+            }
+            ul li a:hover{
+                color:#00FF7F;
+            }
+            .navbar{
+                float: left;
+                
+                
+            }
+            #rightpage{
+                margin-left: 240px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                
+                
+            }
+
+            table{
+                border-collapse: collapse;
+            }
+            #table1,#table2{
+                
+                width: 40%;
+                float: left;
+            }
+            #table2{
+                margin-left: 70px;
+            }
+            #table3{
+                clear: both;
+                margin-top: 200px; 
+                width: 90%;
+            }
+            #table4{
+                margin-top: 13px; 
+                width: 90%;
+            }
+            
+
+        </style>
+    </head>
+    
+    <body>
+
+        <div class="header">
+            <div class="header-a"> 
+                <i class="fa fa-bars" style="color:#00FF7F; font-size: 20px; ">&nbsp&nbsp Admin Panel</i>
+            </div>
+            <div class="header-b">
+                <a href="admin-login.html"><i class="fa fa-user" style="color: #00FF7F;"></i>&nbsp logout</a>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul class="ul">
+                <li><a href="dashboard.html" class="active"><i class="fa fa-dashboard" style="color: #00FF7F;"></i>&nbsp Dashboard</a></li>
+                <li><a href="#"><i class="fa fa-building" style="color: #00FF7F;"></i>&nbspBraches</a></li>
+                <li><a href="#"><i class="fa fa-user" style="color: #00FF7F;"></i> Staff</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart" style="color: #00FF7F;"></i> Courier</a></li>
+                <li><a href="#"><i class="fa fa-file" style="color: #00FF7F;"></i> Reports</a></li>
+            </ul>
+        </div>
+
+
+<div id="rightpage">
+
+        <div id="headings">
+        <h3>COURIER VIEW</h3><br>
+        <b>Reference Number: </b><br>
+        <b>Courier Date: </b><br>
+    </div>
+        <table id="table1" border="1">
+            <tr><td colspan="2" style="text-align: center;"><b>Sender Details<b></b></td></tr>
+            <tr>
+                <td><b>Sender Branch<b></td></td>
+                    <td>CSP Hyderabad</td>
+            </tr>
+            <tr>
+                <td><b>Sender Name</b></td>
+                <td>Ram</td>
+            </tr>
+            <tr>
+                <td><b>Sender Contact Number<b></td>
+                <td>1234567890</td>
+            </tr>
+            <tr>
+                <td><b>Sender Address<b></td></td>
+                <td>H:NO:1-2-33</td>
+            </tr>
+            <tr>
+                <td><b>Sender City<b></td>
+                    <td>Hyderabad</td>
+            </td></tr>
+            <tr>
+                <td><b>Sender State<b></td>
+                    <td>Telangana</td>
+            </tr>
+            <tr>
+                <td><b>Sender pincode<b></td>
+                <td>501401</td>
+            </tr>
+            <tr>
+                <td><b>Sender Country<b></td>
+                    <td>India</td>
+            </tr>
+        </table>
+        <table id="table2" border="1">
+            <tr><td style="text-align: center;" colspan="2"><b>Recipient Details</b></td></tr>
+            <tr>
+                <td><b>Recipient Name</b></td>
+                <td>Raj</td>
+            </tr>
+            <tr>
+                <td><b>Recipient Contact Number<b></td>
+                <td>1234567980</td>
+            </tr>
+            <tr>
+                <td><b>Recipient Address<b></td></td>
+                <td>H:NO:1-1-36</td>
+            </tr>
+            <tr>
+                <td><b>Recipient City<b></td>
+                    <td>Warangal</td>
+            </td></tr>
+            <tr>
+                <td><b>Recipient State<b></td>
+                    <td>Telangana</td>
+            </tr>
+            <tr>
+                <td><b>Recipient pincode<b></td>
+                <td>502402</td>
+            </tr>
+            <tr>
+                <td><b>Recipient Country<b></td>
+                    <td>India</td>
+            </tr>
+        </table>
+
+    <table id="table3" border="1">
+        <tr>
+            <td><b>Courier Description</b></td>
+            <td> Parcel contain fibre</td>
+        </tr>
+        <tr>
+            <td><b>Parcel Weight</b></td>
+            <td>3 kg</td>
+        </tr>
+        <tr>
+            <td><b>Parcel Dimension Length</b></td>
+            <td>40 inch</td>
+        </tr>
+        <tr>
+            <td><b>Parcel Dimension Width</b></td>
+            <td>40 inch</td>
+        </tr>
+        <tr>
+            <td><b>Parcel Dimension Height</b></td>
+            <td>40 inch</td>
+        </tr>
+        <tr>
+            <td><b>Parcel price</b></td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td><b>Status</b></td>
+            <td>Delivered</td>
+        </tr>
+    </table>
+    <table id="table4" border="1">
+        <tr><b><td style="text-align: center;" colspan="4"><b>Courier History</b></td></b></tr>
+        <tr>
+            <td><b>#</b></td>
+            <td><b>Remark</b></td>
+            <td><b>Status</b></td>
+            <td><b>Time</b></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Parcel has been picked</td>
+            <td>Shipped</td>
+            <td>2019-04-03 13:01:01</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Parcel reached hub city</td>
+            <td>Intransit</td>
+            <td>2019-04-03 13:01:51</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Arrived at destination</td>
+            <td>Arrived at destination</td>
+            <td>2019-04-03 13:04:12</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Parcel Out for Delivery</td>
+            <td>Out for Delivery</td>
+            <td>2019-04-03 13:05:13</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Parcel has been delivered</td>
+            <td>Delivered</td>
+            <td>2019-04-03 14:02:01</td>
+        </tr>
+    </table>
+    </div>
+    </body>
+</html>

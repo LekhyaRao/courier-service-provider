@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <style>
+            *{
+                margin:0px; 
+            }
+            .header{
+                background-color: black;
+                padding-left: 25px;
+                height: 50px;
+                padding: 15px 15px;
+                width: 100%;
+            }
+           
+            .header-b > a{
+                display: inline-block;
+                text-align: center;
+                padding-left: 90%;
+                text-decoration: none;
+                color: white;
+            }
+            .header-b > a:hover{
+                color: #00FF7F;
+            }
+            #body{
+                
+                margin-left: 250px;
+                width: 70%;
+                margin-bottom: 30px;
+            }
+            .ul{
+                padding: 0px;
+                margin-top: 0;
+                width: 200px;
+                background-color: black;
+                height: 100%;
+                position: absolute;
+                overflow: auto;
+                
+            }
+            .navbar{
+                float: left;
+            }
+            .ul li a{
+                display: block;
+                color: white;
+                padding: 25px 25px;
+                text-decoration: none;
+                text-align: left;
+            }
+            ul li a.active{
+                color: #00FF7F;
+            }
+            ul li a:hover:not(.active){
+                color:#00FF7F;
+            }
+            .flex-container-a{
+                margin-top: 50px;
+                display: flex;
+                background-color: #DCDCDC;
+                flex-direction: row-reverse;
+                
+            }
+            .flex-container-a > div{
+                background-color:white;
+                width: 320px;
+                margin: 30px;
+                padding: 10px 20px;
+            }
+            .flex-container-a >div > h2
+            {
+                display: inline-block;
+                width: 50%;
+                text-align: center;
+                color: gray;
+            }
+            .flex-container-a >div > i
+            {
+                display: inline-block;
+                width: 50%;
+                vertical-align: middle;
+                text-align: center;
+            }
+            .flex-container-b{
+                display: flex;
+                background-color:gainsboro;
+                flex-direction: row-reverse;
+                background-color: #DCDCDC;
+            }
+            .flex-container-b > div{
+                background-color:white;
+                width: 320px;
+                margin: 30px;
+                padding: 10px 20px;
+            }
+            .flex-container-b >div > h2
+            {
+                display: inline-block;
+                width: 50%;
+                text-align: center;
+                color: gray;
+            }
+            .flex-container-b >div > i
+            {
+                display: inline-block;
+                width: 50%;
+                vertical-align: middle;
+                text-align: center;
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-a"> 
+                <i class="fa fa-bars" style="color:#00FF7F; font-size: 20px; ">&nbsp&nbsp Admin Panel</i>
+            </div>
+            <span class="header-b">
+                <a href="admin-login.html"><i class="fa fa-user" style="color: #00FF7F;"></i>&nbsp logout</a>
+            </span>
+        </div>
+        <div class="navbar">
+            <ul class="ul">
+                <li><a href="#" class="active"><i class="fa fa-dashboard" style="color: #00FF7F;"></i>&nbsp Dashboard</a></li>
+                <li><a href="#"><i class="fa fa-building" style="color: #00FF7F;"></i>&nbspBraches</a></li>
+                <li><a href="#"><i class="fa fa-user" style="color: #00FF7F;"></i> Staff</a></li>
+                <li><a href="courierview.html"><i class="fa fa-shopping-cart" style="color: #00FF7F;"></i> Courier</a></li>
+                <li><a href="#"><i class="fa fa-file" style="color: #00FF7F;"></i> Reports</a></li>
+            </ul>
+        </div>
+        <div id="body">
+        <div class="flex-container-a">
+            <div>
+                <h2>total shipped</h2><i class="fa fa-database" style="font-size:x-large; color: #C0C0C0;"></i>
+                <h1>10</h1>
+            </div>
+            <div>
+                <h2>total courier pickup</h2><i class="fa fa-product-hunt" style="font-size: x-large; color: #C0C0C0; "></i>
+                <h1>5</h1>
+            </div>
+            <div>
+                <h2>total courier</h2><i class="fa fa-database" style="font-size: x-large;color: #C0C0C0; "></i>
+                <h1>11</h1>
+            </div>
+        </div>
+        <div class="flex-container-b">
+            <div>
+                <h2>total  delivered courier</h2><i class="fa fa-shopping-cart" style="font-size: x-large; color: #C0C0C0;"></i>
+                <h1>4</h1>
+            </div>
+            <div>
+                <h2>total courier out for delivery</h2><i class="fa fa-truck" style="font-size: x-large; color: #C0C0C0;"></i>
+                <h1>4</h1>
+            </div>
+            <div>
+                <h2>total courier arrived at destination</h2><i class="fa fa-truck" style="font-size: x-large; color: #C0C0C0;"></i>
+                <h1>3</h1>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
